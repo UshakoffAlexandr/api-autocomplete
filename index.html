@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>github-api-autocomplete</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="main">
+      <section class="section">
+        <form class="form" autocomplete="off">
+          <input
+            id="input"
+            name="repositories"
+            type="text"
+            class="input search-input"
+            placeholder="Search of repositories"
+          />
+        </form>
+        <ul id="find" class="ul finded-repositories"></ul>
+        <ul id="select" class="ul selected-repositories"></ul>
+      </section>
+    </main>
+    <script src="script.js" defer></script>
+  </body>
+</html>
