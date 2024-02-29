@@ -82,6 +82,7 @@ p {
 }
 
 .remove-btn {
+  cursor: pointer;
   align-self: center;
   width: 60px;
   height: 60px;
