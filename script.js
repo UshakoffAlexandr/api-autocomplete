@@ -23,10 +23,8 @@ async function searchRepositories() {
 function createSelectedRepository(obj) {
   const repositoriesContainer = document.createElement("div");
   repositoriesContainer.classList.add("repositories-container");
-  repositoriesContainer.classList.add("div");
   const selectedRepository = document.createElement("li");
   selectedRepository.classList.add("selected-repository");
-  selectedRepository.classList.add("li");
   const removeBtn = document.createElement("button");
   removeBtn.classList.add("remove-btn");
   removeBtn.classList.add("button");
@@ -57,7 +55,6 @@ async function showRepositories() {
   for (let i = 0; i < repositoriesArray.length; i++) {
     const findRepository = document.createElement("li");
     findRepository.classList.add("find-repos");
-    findRepository.classList.add("li");
     findRepository.textContent = repositoriesArray[i].name;
     findRepositories.append(findRepository);
     findRepository.addEventListener("click", () => {
